@@ -1,0 +1,94 @@
+<! home page for admin>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tax Filing Application - Admin Home Page</title>
+</head>
+<body>
+  <h2>Welcome to the Tax Filing Application (Admin Panel)!</h2>
+  
+  <h3>About Tax Filing</h3>
+  <p>
+    Our application simplifies the process of submitting tax information. 
+    We provide a user-friendly interface for users to enter and submit their tax data securely.
+  </p>
+  
+  <h3>Key Features</h3>
+  <ul>
+    <li>Efficient and streamlined tax data entry</li>
+    <li>Secure data transmission and storage</li>
+    <li>Automated calculations and validations</li>
+    <li>Real-time status updates on submitted tax filings</li>
+    <li>Access to downloadable tax documents and receipts</li>
+  </ul>
+  <h3>Get Started</h3>
+  <p>
+    To start using our tax filing application, please sign up for an account or login if you already have one.
+  </p>
+  <a href="/signup">Sign Up</a> | <a href="/login">Login</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tax Filing Application</title>
+  <style>
+    /* CSS for navigation bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar .active {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a class="active" href="#Responses">Responses</a>
+  </div>
+
+  
+    <h2>Responses</h2>
+    <p>Please provide the following information for tax filing:</p>
+  
+  <form action="/submit_tax" method="POST">
+    <label for="form16">Form 16:</label>
+    <input type="file" id="form16" name="form16" required><br><br>
+    
+    <label for="payslip">Payslip (Any one of last year):</label>
+    <input type="file" id="payslip" name="payslip" required><br><br>
+    
+    <label for="housingLoan">Housing Loan Interest and Principal Payment Certificate:</label>
+    <input type="file" id="housingLoan" name="housingLoan" required><br><br>
+    
+    <label for="investments">Investments made for tax planning:</label>
+    <input type="file" id="investments" name="investments" required><br><br>
+    
+    <input type="submit" value="Submit">
+    </ul>
+    <!-- Add any additional form elements or instructions here -->
+  </form>
+</body>
+</html>
+  <h3>Admin Options</h3>
+  <ul>
+    <li><a href="/responses">View User Responses</a></li>
+  </ul>
+</body>
+</html>

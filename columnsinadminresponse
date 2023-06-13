@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tax Filing Application - Admin Home Page</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome to the Tax Filing Application (Admin Panel)!</h2>
+  
+  <h3>About Tax Filing</h3>
+  <p>
+    Our application simplifies the process of submitting tax information. 
+    We provide a user-friendly interface for users to enter and submit their tax data securely.
+  </p>
+  
+  <h3>Key Features</h3>
+  <ul>
+    <li>Efficient and streamlined tax data entry</li>
+    <li>Secure data transmission and storage</li>
+    <li>Automated calculations and validations</li>
+    <li>Real-time status updates on submitted tax filings</li>
+    <li>Access to downloadable tax documents and receipts</li>
+  </ul>
+  
+  <h3>Admin Responses</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone number</th>
+        <th>Address</th>
+        <th>Occupation</th>
+        <th>Salary Per Annum</th>
+        <th>Form 16</th>
+        <th>Payslip</th>
+        <th>Housing Loan</th>
+        <th>Investments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Loop through the database records and generate rows dynamically -->
+      <tr>
+        <td>-------</td>
+        <td>-------</td>
+        <td>-------</td>
+        <td>-------</td>
+        <td>-------</td>
+        <td>-------</td>
+        <td>-------</td>
+        <td>-------</td>
+        <td>-------</td>
+        <td>-------</td>
+      </tr>
+      <!-- Repeat rows for each user response in the database -->
+    </tbody>
+  </table>
+  
+  <form action="/add_response" method="POST">
+    <h3>Add New Response</h3>
+    <!-- Include form fields to gather user response data -->
+    <!-- Name, email, phone number, address, occupation, salary, etc. -->
+    <label for="Add New Response">Add New Response:</label>
+    <input type="file" id="Add New Response" name="Add New Response" required><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
